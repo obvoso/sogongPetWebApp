@@ -1,8 +1,7 @@
 package petMan;
 
-public class petManDTO {
+public class PetManDTO {
 	
-	int		num;
 	String	name;
 	String	birth;
 	String	type;
@@ -10,12 +9,15 @@ public class petManDTO {
 	String	master;
 	String	phone;
 	
-	public int getNum() {
-		return num;
+	public PetManDTO(String name, String birth, String type, String kind, String master, String phone) {
+		this.name = name;
+		this.birth = birth;
+		this.type = type;
+		this.kind = kind;
+		this.master = master;
+		this.phone = phone;
 	}
-	public void setNum(int num) {
-		this.num = num;
-	}
+	
 	public String getName() {
 		return name;
 	}
