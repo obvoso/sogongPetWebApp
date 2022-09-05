@@ -41,7 +41,7 @@ public class PetSearchServlet extends HttpServlet {
 			GetPetList searchPetList = searchPet.search(SQL);
 			request.setAttribute("list", searchPetList);
 			if (jspAdrr.equals("lookupPetList.jsp")) {
-				SQL2 = "select * from petMan order by binary(name)";
+				SQL2 = "select * from petMan order by name";
 				GetPetList searchPetList2 = searchPet.search(SQL2);
 				request.setAttribute("list2", searchPetList2);
 			}
